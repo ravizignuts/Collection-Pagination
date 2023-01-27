@@ -17,6 +17,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('index',[CollectionController::class,'index']);
 Route::controller(PaginationQBController::class)->group(function(){
-    Route::get('/qb','ShowEloquentPagination');
+    Route::get('/qb','ShowQBPagination');
     Route::get('/','ShowEloquentPagination');
 });

@@ -1,8 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Models\Data;
 use Illuminate\Http\Request;
+use App\Models\CustomerModel;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
 
@@ -23,7 +23,7 @@ class CollectionController extends Controller
         // });
         // $data = $collection->reverse(2);
         // dd($data->toArray());
-        //$data = Data::get();
+        //$data = CustomerModel::get();
         //
         // $output = $data->search(function($data){
         //     return $data->email == 'lharber@hayes.com';
@@ -36,8 +36,8 @@ class CollectionController extends Controller
         //
 
         /////====================>>Query Builder Practice<<=====================////
-        //$data = DB::table('datas')->inRandomOrder()->get();
-        //$data = DB::table('datas')->inRandomOrder()->first();
+        //$data = DB::table('customer_models')->inRandomOrder()->get();
+        //$data = DB::table('customer_models')->inRandomOrder()->first();
 
         //dd($data);
 
