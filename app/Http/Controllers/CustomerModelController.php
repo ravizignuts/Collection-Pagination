@@ -10,14 +10,16 @@ class CustomerModelController extends Controller
     //=============Mutators Casting Controller=================
     public function AddValues(){
         // $customer = DB::table('customer_models')->insert([
-        //     'fname' => 'Dinesh',
-        //     'lname' => 'Prajapati',
+        //     'fname' => 'Manan',
+        //     'lname' => 'Patel',
         //     'dob'   => '1999/01/12',
-        //     'email' => 'dinesh@gmail.com',
+        //     'email' => 'mp05@gmail.com',
         //     'gender'=> 'Male',
-        //     'phone' => '0987651234',
-        //     'city'  => 'Nadiad',
+        //     'phone' => '9197651234',
+        //     'city'  => 'Canada',
         // ]);
-        //return $customer;
+        // return $customer;
     }
+
 }
+

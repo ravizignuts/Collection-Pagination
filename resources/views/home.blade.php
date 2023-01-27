@@ -37,7 +37,7 @@
                 </tr>
                 </thead>
                 <tbody class="table-group-divider">
-                    @foreach ($datas as $data )
+                    @foreach ($customer as $data )
                 <tr class="table-primary">
                     <td scope="row">{{ $data->id }}</td>
                     <td>  {{ $data->fname }}</td>
@@ -58,7 +58,7 @@
     </div>
     {{--using this  $datas->links()  You need to include path and in root method --}}
     {{-- {{  $datas->links()  }} --}}
-    {{$datas->links('pagination::bootstrap-5')  }}
+    {{$customer->links('pagination::bootstrap-5')}}
 
 
 

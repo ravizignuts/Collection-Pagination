@@ -11,6 +11,9 @@ class CustomerModel extends Model
 {
     use HasFactory;
     protected $fillable = ['fname','lname','dob','email','gender','phone','city'];
+    protected $casts = [
+        'gender' => 'encrypted',
+    ];
 
     //==================Accessor=================//
     //method one
@@ -24,6 +27,11 @@ class CustomerModel extends Model
         );
 
     }
+    // protected function gender():Attribute{
+    //     return Attribute::make(
+    //         get: fn ($value) => decrypt($value),
+    //     );
+    // }
 
     //==================Mutators=================//
     //method one

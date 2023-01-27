@@ -8,17 +8,18 @@ use Illuminate\Support\Facades\DB;
 class PaginationQBController extends Controller
 {
     public function ShowQBPagination(){
-        $datas = DB::table('customer_models')->Paginate(12);
+        $data = DB::table('customer_models')->Paginate(12);
         //For more designed view we have to add path App/Providers/AppserviceProvider ==> use Illuminate\Pagination\Paginator;
         //add in root method Paginator::useBootstrap;
-        //$datas = DB::table('customer_models')->simplePaginate(10);
-        //$datas->withPath('/home/index');
+        //$data = DB::table('customer_models')->simplePaginate(10);
+        //$data->withPath('/home/index');
         //dd($data);
-        return view('home',['datas'=>$datas]);
+        return view('home',['data'=>$data]);
     }
     public function ShowEloquentPagination(){
-        // $datas = Data::where('gender','=','male')->paginate(5);
-        $datas = CustomerModel::Paginate(10);
-        return view('home',['datas'=>$datas]);
+        // $data = Data::where('gender','=','male')->paginate(5);
+        $data = CustomerModel::Paginate(10);
+        // dd($data)
+        return view('home',['customer'=>$data]);
     }
 }

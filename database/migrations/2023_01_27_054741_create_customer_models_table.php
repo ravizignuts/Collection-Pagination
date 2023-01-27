@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('lname');
             $table->date('dob');
             $table->string('email');
-            $table->string('gender');
+            $table->text('gender');
             $table->string('phone');
             $table->string('city');
             $table->timestamps();
