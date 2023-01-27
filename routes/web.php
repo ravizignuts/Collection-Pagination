@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CollectionController;
+use App\Http\Controllers\CustomerModelController;
 use App\Http\Controllers\PaginationQBController;
 use Illuminate\Support\Facades\Route;
 
@@ -19,4 +20,8 @@ Route::get('index',[CollectionController::class,'index']);
 Route::controller(PaginationQBController::class)->group(function(){
     Route::get('/qb','ShowQBPagination');
     Route::get('/','ShowEloquentPagination');
+});
+Route::controller(CustomerModelController::class)->group(function(){
+    Route::get('add','AddValues');
+
 });
