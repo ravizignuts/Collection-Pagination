@@ -42,7 +42,7 @@
                     <td scope="row">{{ $data->id }}</td>
                     <td>  {{ $data->fname }}</td>
                     <td>{{ $data->lname }}</td>
-                    <td> {{ $data->dob }}</td>
+                    <td> {{ $data->dob->format('d/m/Y')}}</td>
                     <td>{{ $data->email }}</td>
                     <td>{{ $data->gender }}</td>
                     <td>{{ $data->phone }}</td>
